@@ -25,7 +25,16 @@ Import inside your project:
 import "@bylickilabs/ai-monitoring-layer";
 ```
 
-## 🌐 CDN Integration (Recommended)
+## 🌐 CDN
+```
+https://cdn.jsdelivr.net/npm/@bylickilabs/ai-monitoring-layer/ai.min.js
+https://unpkg.com/@bylickilabs/ai-monitoring-layer/ai.min.js
+```
+
+---
+
+## 🌐 CDN Integration
+
 ### Primary + Fallback CDN Setup
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@bylickilabs/ai-monitoring-layer/ai.min.js" defer></script>
@@ -52,6 +61,8 @@ function loadFallback() {
 <script src="ai.min.js" defer></script>
 ```
 
+---
+
 ## 📘 Usage
 ```js
 window.BYLICKILABS_AI_MONITOR.init();
@@ -62,4 +73,4 @@ BYLICKILABS_AI_MONITOR.logCustom("info", "Custom event triggered");
 ```
 
 ## 🛡 License
-MIT © BYLICKILABS
+[LICENSE](LICENSE)
