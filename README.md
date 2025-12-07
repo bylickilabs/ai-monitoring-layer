@@ -1,34 +1,64 @@
 # 🧠 BYLICKILABS – AI Monitoring Layer  
-**Version 1.0.0 — Client‑Side Analytics & Anomaly Detection**
+**Version 1.0.0 — Client-Side Analytics & Intelligent Anomaly Detection**
 
-The **AI Monitoring Layer** is a fully client-side monitoring, diagnostics, and analytics engine for modern web applications.  
-Captures performance metrics, errors, network activity, FPS values, anomalies, and generates incident reports with optional screenshot export (html2canvas).
+The **AI Monitoring Layer** is a fully client-side monitoring, diagnostics, and anomaly-scoring engine designed for modern web applications.  
+It captures performance signals, network failures, runtime errors, FPS degradation, offline events, and generates structured incident reports — including optional screenshot export (via html2canvas).
 
-## 🚀 Features
-- Real‑time error tracking  
-- Network monitoring (fetch + XHR)  
-- Resource load failure detection  
-- FPS/render performance tracking  
-- AI Scoring 2.0  
-- Offline event queue  
-- Incident report export  
-- Screenshot export (optional)  
-- UI monitoring overlay  
+## 🚀 Key Features
+- **Real-time JavaScript error tracking**
+- **Network monitoring** (fetch + XHR interception)
+- **Resource load failure detection**
+- **FPS & rendering performance analysis**
+- **AI Scoring 2.0** (event-based anomaly evaluation)
+- **Offline event awareness**
+- **Incident Report Generator** (JSON export)
+- **Screenshot Capture** *(optional – requires html2canvas)*
+- **Built-in UI Monitoring Overlay** (status, logs, tools)
 
-## 📦 Installation (npm)
+## 📦 Installation via npm
 ```
 npm install @bylickilabs/ai-monitoring-layer
 ```
 
-## 🌐 CDN
-```
-<script src="https://cdn.jsdelivr.net/npm/@bylickilabs/ai-monitoring-layer/ai.min.js" defer></script>
-<script src="https://unpkg.com/@bylickilabs/ai-monitoring-layer/ai.min.js" defer></script>
+Import inside your project:
+```js
+import "@bylickilabs/ai-monitoring-layer";
 ```
 
-## 🔧 Integration
+## 🌐 CDN Integration (Recommended)
+### Primary + Fallback CDN Setup
+```html
+<script src="https://cdn.jsdelivr.net/npm/@bylickilabs/ai-monitoring-layer/ai.min.js" defer></script>
+
+<script 
+    defer
+    onerror="loadFallback()"
+    src="https://unpkg.com/@bylickilabs/ai-monitoring-layer/ai.min.js">
+</script>
+
+<script>
+function loadFallback() {
+    if (!window.BYLICKILABS_AI_MONITOR) {
+        const s = document.createElement('script');
+        s.src = 'ai.min.js';
+        document.head.appendChild(s);
+    }
+}
+</script>
 ```
+
+## 🔧 Local Integration
+```html
 <script src="ai.min.js" defer></script>
+```
+
+## 📘 Usage
+```js
+window.BYLICKILABS_AI_MONITOR.init();
+BYLICKILABS_AI_MONITOR.exportLogs();
+BYLICKILABS_AI_MONITOR.exportIncidentReport();
+BYLICKILABS_AI_MONITOR.captureScreenshot();
+BYLICKILABS_AI_MONITOR.logCustom("info", "Custom event triggered");
 ```
 
 ## 🛡 License
