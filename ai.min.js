@@ -1,6 +1,6 @@
 /*!
  * BYLICKILABS – AI Monitoring Layer (ai.js)
- * Version: 1.0.0
+ * Version: 1.1.1
  *
  * Features:
  *  - Error & Promise Monitoring
