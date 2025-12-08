@@ -1,5 +1,5 @@
 # 🧠 BYLICKILABS – AI Monitoring Layer  
-**Version 1.0.0 — Client-Side Analytics & Intelligent Anomaly Detection**
+**Version 1.1.0 — Client-Side Analytics & Intelligent Anomaly Detection**
 
 The **AI Monitoring Layer** is a fully client-side monitoring, diagnostics, and anomaly-scoring engine designed for modern web applications.  
 It captures performance signals, network failures, runtime errors, FPS degradation, offline events, and generates structured incident reports — including optional screenshot export (via html2canvas).
