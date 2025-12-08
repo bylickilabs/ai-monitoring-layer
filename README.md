@@ -1,5 +1,5 @@
 # 🧠 BYLICKILABS – AI Monitoring Layer  
-**Version 1.1.0 — Client-Side Analytics & Intelligent Anomaly Detection**
+**Version 1.1.1 — Client-Side Analytics & Intelligent Anomaly Detection**
 
 | <img width="1280" height="640" alt="ai layer" src="https://github.com/user-attachments/assets/572c80f1-21a8-4459-be2f-6fea63a272da" /> |
 |---|
